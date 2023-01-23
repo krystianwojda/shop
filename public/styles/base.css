@@ -1,6 +1,7 @@
 html {
     font-family: 'Nunito', sans-serif;
 
+    --box-background-color: #fff;
     --background-color: #f8f9fa;
     --black-font-color: #000;
     --white-font-color: #fff;
@@ -49,13 +50,17 @@ a {
     cursor: pointer;
     font: inherit;
     padding: var(--space-2) var(--space-6);
+    margin: var(--space-4);
     background-image: var(--shop-gradient);
     color: var(--white-font-color);
     border: 1px solid transparent;
     border-radius: var(--border-radius-high);
+    transition: transform 0.75s;
 }
 
 .btn:hover, .btn:active {
     background-image: var(--shop-gradient-hover);
     color: var(--white-font-color);
+    transform: scale(1.05);
+
 }
