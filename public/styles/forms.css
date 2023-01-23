@@ -23,6 +23,6 @@ input, textarea {
 
 input:hover, input:active, textarea:hover, textarea:active {
     border: none;
-    transform: scale(1.01);
+    transform: scale(1.05);
     background-color: #F6F6F6FF;
 }
