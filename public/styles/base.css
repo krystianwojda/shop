@@ -1,6 +1,9 @@
 html {
     font-family: 'Nunito', sans-serif;
 
+    --background-color: #f8f9fa;
+    --black-font-color: #000;
+    --white-font-color: #fff;
     --lighter-grey-color: rgb(138, 147, 159);
 
     --shop-pink: rgb(191, 73, 178);
@@ -18,8 +21,41 @@ html {
     --space-6: 1.5rem;
     --space-8: 2rem;
 
-    --border-radius-small: 5px;
-    --border-radius-medium: 10px;
+    --border-radius-small: 10px;
+    --border-radius-medium: 15px;
+    --border-radius-high: 20px;
 
     --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--black-font-color);
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--shop-mix);
+}
+
+.btn {
+    cursor: pointer;
+    font: inherit;
+    padding: var(--space-2) var(--space-6);
+    background-image: var(--shop-gradient);
+    color: var(--white-font-color);
+    border: 1px solid transparent;
+    border-radius: var(--border-radius-high);
+}
+
+.btn:hover, .btn:active {
+    background-image: var(--shop-gradient-hover);
+    color: var(--white-font-color);
 }
