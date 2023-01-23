@@ -1,3 +1,25 @@
 html {
     font-family: 'Nunito', sans-serif;
+
+    --lighter-grey-color: rgb(138, 147, 159);
+
+    --shop-pink: rgb(191, 73, 178);
+    --shop-pink-mix: rgb(191, 73, 178);
+    --shop-mix: rgb(96, 99, 212);
+    --shop-blue-mix: rgb(74, 112, 226);
+    --shop-blue: rgb(0, 125, 245);
+
+    --shop-gradient: linear-gradient(to left, var(--shop-pink), var(--shop-blue));
+    --shop-gradient-hover: linear-gradient(to left, rgb(158, 56, 146), rgb(3, 117, 223));
+
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-4: 1rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+
+    --border-radius-small: 5px;
+    --border-radius-medium: 10px;
+
+    --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
