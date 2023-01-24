@@ -5,6 +5,7 @@ const csrf = require('csurf');
 
 const db = require('./data/database');
 const addCsrfTokenMiddleware = require('./middlewares/csrf-token');
+const errorHandlerMiddleware = require('./middlewares/error-handler');
 const authRoutes = require('./routes/auth.routes');
 
 const app = express();
@@ -21,8 +22,10 @@ app.use(addCsrfTokenMiddleware);
 
 app.use(authRoutes);
 
+app.use(errorHandlerMiddleware);
+
 db.connectToDatabase().then(() => {
-        app.listen(3000);
+        app.listen(3001);
     }).catch((error) => {
         console.log('Failed to connect to the database');
         console.log(error);
