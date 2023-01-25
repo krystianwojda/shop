@@ -15,6 +15,10 @@ class User {
         };
     }
 
+    getUserWithSameEmail() {
+        return db.getDb().collection('users').findOne({ email: this.email });
+    }
+
     async signUp() {
         const hashedPassword = await bcrypt.hash(this.password, 12);
 
@@ -25,6 +29,10 @@ class User {
             address: this.addres
         });
     };
+
+    hasMatchingPassword(hashedPassword) {
+        return bcrypt.compare(this.password, hashedPassword);
+    }
 }
 
 module.exports = User;
