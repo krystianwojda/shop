@@ -24,7 +24,7 @@ class User {
 
         const result = await db.getDb().collection('users').insertOne({
             email: this.email,
-            password: this.password,
+            password: hashedPassword,
             name: this.name,
             address: this.addres
         });
