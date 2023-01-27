@@ -15,7 +15,7 @@ input, textarea {
     padding: var(--space-2);
     border-radius: var(--border-radius-small);
     border: none;
-    width: 100%;
+    width: 90%;
     background-color: var(--box-background-color);
     box-shadow: var(--shadow-medium);
     transition: transform 0.75s;

@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Nunito', sans-serif;
 
@@ -5,8 +9,9 @@ html {
     --background-color: #f8f9fa;
     --black-font-color: #000;
     --white-font-color: #fff;
-    --lighter-grey-color: rgb(138, 147, 159);
+    --lighter-grey-color: rgb(232, 232, 232);
 
+    --shop-pink-light: rgb(207, 81, 193);
     --shop-pink: rgb(191, 73, 178);
     --shop-pink-mix: rgb(191, 73, 178);
     --shop-mix: rgb(96, 99, 212);
@@ -33,6 +38,12 @@ body {
     background-color: var(--background-color);
     color: var(--black-font-color);
     margin: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 50rem;
+    margin: 0 auto;
 }
 
 ul, ol {
