@@ -1,3 +1,12 @@
+.form-new-product{
+    margin: var(--space-8) auto;
+    padding: var(--space-4);
+    background-color: var(--box-background-color);
+    border-radius: var(--border-radius-medium);
+    box-shadow: var(--shadow-medium);
+    text-align: center;
+}
+
 form hr {
     border-color: var(--shop-blue-mix);
     margin: var(--space-4);
@@ -18,11 +27,9 @@ input, textarea {
     width: 90%;
     background-color: var(--box-background-color);
     box-shadow: var(--shadow-medium);
-    transition: transform 0.75s;
 }
 
 input:hover, input:active, textarea:hover, textarea:active {
     border: none;
-    transform: scale(1.05);
     background-color: #F6F6F6FF;
 }
