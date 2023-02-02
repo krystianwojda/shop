@@ -77,6 +77,14 @@ a {
 
 }
 
+.badge {
+    margin-left: var(--space-2);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--border-radius-high);
+    background-color: var(--shop-pink);
+    color: white;
+}
+
 .error {
     text-align: center;
 }
@@ -93,7 +101,19 @@ a {
 
 .alert h2 {
     font-size: 1rem;
-    margin: var(--space-2);
     text-transform: uppercase;
     margin: 0 0 var(--space-4) 0;
+}
+
+
+
+
+@media (min-width: 48rem) {
+    .badge {
+        margin-left: var(--space-2);
+        padding: var(--space-2) var(--space-4);
+        border-radius: var(--border-radius-high);
+        background-color: var(--shop-pink);
+        color: white;
+    }
 }

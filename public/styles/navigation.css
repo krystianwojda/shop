@@ -39,6 +39,13 @@ main {
     margin: 0 var(--space-4);
 }
 
+.nav-items .cart {
+    background-color: var(--shop-pink-light);
+    border: 1px solid transparent;
+    border-radius: var(--border-radius-high);
+    padding: var(--space-2) var(--space-6);
+}
+
 .nav-items button {
     cursor: pointer;
     font: inherit;
@@ -135,5 +142,9 @@ main {
     .nav-items a:hover, .nav-items a:active {
         background-color: var(--background-color);
         color: var(--shop-pink-mix);
+    }
+
+    .nav-items .cart {
+        background-color: var(--shop-pink-light);
     }
 }

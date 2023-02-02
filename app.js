@@ -44,7 +44,7 @@ app.use('/admin', adminRoutes);
 app.use(errorHandlerMiddleware);
 
 db.connectToDatabase().then(() => {
-        app.listen(3000);
+        app.listen(3001);
     }).catch((error) => {
         console.log('Failed to connect to the database');
         console.log(error);
