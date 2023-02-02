@@ -2,7 +2,7 @@ const addToCardButtonElement = document.querySelector('#product-details button')
 const cartBadge = document.querySelector('.nav-items .badge');
 
 const addToCard = async () => {
-    const productId = addToCardButtonElement.dataset.productId;
+    const productId = addToCardButtonElement.dataset.productid;
     const csrfToken = addToCardButtonElement.dataset.csrf;
 
     let response;
@@ -14,7 +14,7 @@ const addToCard = async () => {
                 _csrf: csrfToken
             }),
             headers: {
-                'Content=Type': 'application/json'
+                'Content-Type': 'application/json'
             }
         });
     } catch (error) {
