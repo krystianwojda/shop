@@ -105,8 +105,22 @@ a {
     margin: 0 0 var(--space-4) 0;
 }
 
+.bump {
+    -webkit-animation:bump 0.35s  linear; /*for Google*/
+    -moz-animation:bump 0.35s  linear;/*for Firefox*/
+}
 
+@-webkit-keyframes bump{/*for Google*/
+    0% {-webkit-transform:scale(1.2,1.2); opacity: 0.9;}
+    50% {-webkit-transform:scale(0.9,0.9); opacity: 1.1;}
+    100% {-webkit-transform:scale(1,1); opacity: 1.2;}
+}
 
+@-moz-keyframes bump{/*for Firefox*/
+    0% {-moz-transform:scale(1.2,1.2); opacity: 0.9;}
+    50% {-moz-transform:scale(0.9,0.9); opacity: 1.1;}
+    100% {-moz-transform:scale(1,1); opacity: 1.2;}
+}
 
 @media (min-width: 48rem) {
     .badge {
@@ -117,3 +131,6 @@ a {
         color: white;
     }
 }
+
+
+
