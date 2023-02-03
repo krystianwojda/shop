@@ -7,9 +7,12 @@ html {
 
     --box-background-color: #fff;
     --background-color: #f8f9fa;
-    --black-font-color: #000;
     --white-font-color: #fff;
+    --black-font-color: #000;
+
     --lighter-grey-color: rgb(232, 232, 232);
+    --medium-grey-color: rgb(168, 167, 167);
+    --dark-grey-color: rgb(128, 126, 126);
 
     --shop-pink-light: rgb(207, 81, 193);
     --shop-pink: rgb(191, 73, 178);
@@ -41,9 +44,13 @@ body {
 }
 
 main {
-    width: 90%;
+    width: 85%;
     max-width: 50rem;
     margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
 }
 
 ul, ol {

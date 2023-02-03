@@ -1,7 +1,12 @@
 <article class="cart-item">
     <div class="cart-item-info">
-        <h2><%= item.product.title %></h2>
-        <p><%= item.totalPrice.toFixed(2) %> zł <span class="cart-product-price">(<%= item.product.price.toFixed(2) %> zł)</span></p>
+        <div class="cart-item-image">
+            <img class="cart-item-thumbnail" src="<%= item.product.imageUrl %>" alt="<%= item.product.title %>">
+        </div>
+        <div class="cart-item-data">
+            <h2><%= item.product.title %></h2>
+            <p><%= item.totalPrice.toFixed(2) %> zł <span class="cart-product-price">(<%= item.product.price.toFixed(2) %> zł)</span></p>
+        </div>
     </div>
 
     <div class="cart-item-managment">
