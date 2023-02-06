@@ -36,7 +36,7 @@ const updateCartItem = (req, res) => {
        updatedCartData: {
            newTotalQuantity: cart.totalQuantity,
            newTotalPrice: cart.totalPrice,
-           updateItemPrice: updatedItemData.updatedItemPrice
+           updatedItemPrice: updatedItemData.updatedItemPrice
        }
     });
 };
