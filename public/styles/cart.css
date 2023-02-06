@@ -55,10 +55,22 @@
     text-align: center;
 }
 
+#cart-total {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #cart-total p {
     font-size: 1.5rem;
     color: var(--shop-blue-mix);
     font-weight: bold;
+}
+
+#cart-total #cart-total-fallback {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--shop-pink-mix);
 }
 
 .btn {
@@ -98,5 +110,6 @@
 
     #cart-total {
         text-align: left;
+        display: flex;
     }
 }

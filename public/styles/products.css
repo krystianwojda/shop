@@ -82,6 +82,7 @@
 
 #product-title {
     margin: var(--space-4) 0;
+    text-align: left;
 }
 
 .btn-buy {
