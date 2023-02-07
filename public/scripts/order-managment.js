@@ -1,6 +1,4 @@
-const updateOrderFormElements = document.querySelectorAll(
-    '.order-actions form'
-);
+const updateOrderFormElements = document.querySelectorAll('.order-actions form');
 
 const updateOrder = async (event) => {
     event.preventDefault();
@@ -36,7 +34,8 @@ const updateOrder = async (event) => {
 
     const responseData = await response.json();
 
-    form.parentElement.parentElement.querySelector('.badge').textContent = responseData.newStatus.toUpperCase();
+    form.parentElement.parentElement.querySelector('.badge').textContent =
+        responseData.newStatus.toUpperCase();
 }
 
 for (const updateOrderFormElement of updateOrderFormElements) {
