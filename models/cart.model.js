@@ -8,7 +8,7 @@ class Cart {
     }
 
     async updatePrices() {
-        const productIds = this.items.map(function (item) {
+        const productIds = this.items.map((item) => {
             return item.product.id;
         });
 
@@ -17,7 +17,7 @@ class Cart {
         const deletableCartItemProductIds = [];
 
         for (const cartItem of this.items) {
-            const product = products.find(function (prod) {
+            const product = products.find((prod) => {
                 return prod.id === cartItem.product.id;
             });
 
@@ -35,7 +35,7 @@ class Cart {
         }
 
         if (deletableCartItemProductIds.length > 0) {
-            this.items = this.items.filter(function (item) {
+            this.items = this.items.filter((item) => {
                 return deletableCartItemProductIds.indexOf(item.product.id) < 0;
             });
         }
