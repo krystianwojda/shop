@@ -4,10 +4,9 @@ const mongodb = require('mongodb');
 const db = require('../data/database');
 
 class User {
-    constructor(email, password, name, fullname, street, postal, city) {
+    constructor(email, password, fullname, street, postal, city) {
         this.email = email;
         this.password = password;
-        this.name = name;
         this.fullname = fullname;
         this.addres = {
             street: street,
